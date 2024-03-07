@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기지개를 피자</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>기지개 피고 해요</h2>
+    <div id="timerContainer">
+      <div id="timer">00:00:00</div>
+      <div id="timeInput">
+        <!-- 시간 입력 영역 -->
+        <label for="hours">시간</label>
+        <input type="number" id="hours" min="0" value="0" />
+
+        <label for="minutes">분</label>
+        <input type="number" id="minutes" min="0" max="59" value="0" />
+
+        <label for="seconds">초</label>
+        <input type="number" id="seconds" min="0" max="59" value="0" />
+      </div>
+      <div id="controlBtn">
+        <button id="startBtn" class="btn btn" onclick="startTimer()">
+          Start
+        </button>
+        <button class="btn btn" onclick="stopTimer()">Stop</button>
+        <button class="btn btn" onclick="resetTimer()">Reset</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
