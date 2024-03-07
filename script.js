@@ -101,7 +101,7 @@ function startTimer() {
       resetTimer();
     } else {
       // 추가된 부분: 중간에 타이머가 멈추었을 때 남은 시간 저장
-      remainingSeconds = totalSeconds;
+      remainingSeconds = totalSeconds - 1;
 
       // 1초 감소
       totalSeconds--;
